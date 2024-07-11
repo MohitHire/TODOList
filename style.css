@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbox {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.724);
+    padding: 20px 50px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#num {
+    display: flex;
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    width: 10rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#prog-bar {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#progress {
+    width: 0%;
+    height: 20px;
+    background-color: rgb(60, 244, 183);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    width: 30rem;
+    padding: 12px;
+    flex: 1;
+    border: 1px solid rgb(118, 132, 255);
+    border-radius: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+button {
+    width: 3.5rem;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 2px solid rgb(0, 244, 163);
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove margin */
+    width: 100%; /* Ensure the list takes full width */
+}
+
+li {
+    display: flex;
+    text-align:left;
+    align-items: center;
+    justify-content:center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 5px 25%;
+    border-radius: 50px;
+    word-wrap: break-word; /* Ensure text wraps within the container */
+    width: 50%; /* Prevent the task bar from becoming too wide */
+}
+
+.task-text {
+    flex-grow: 1;
+    margin-left: 10px;
+    word-wrap: break-word; /* Ensure text wraps within the container */
+    max-width:30%; /* Set a maximum width for the task text */
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+button.edit, button.complete, button.delete {
+    margin-left: 5px;
+}
+
+button.complete {
+    width: 100px;
+}
+
+button.delete {
+    width: 80px;
+}
+
+/* Style the checkbox */
+.edit-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    
+    width: 10px; /* Decreased width */
+    height: 10px; /* Decreased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.edit-checkbox:checked {
+    background-color: rgb(4, 222, 255);
+}
+
+.edit-checkbox:checked::before {
+    content: '✓';
+    color: white;
+    font-size: 8px; /* Decreased font size */
+}
