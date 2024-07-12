@@ -93,18 +93,21 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0; /* Remove margin */
-    width: 100%; /* Ensure the list takes full width */
+    width:1500px; /* Ensure the list takes full width */
 }
 
 li {
     display: flex;
     text-align:left;
     align-items: center;
-    justify-content:center;
-    background-color: white;
-    color: black;
+    justify-content:left;
+    background-color: rgba(87, 126, 251, 0.23);
+    border:2px solid white;
+    margin:10px;
+    margin-left:25%;
+    color:white;
     padding: 10px;
-    margin: 5px 25%;
+  
     border-radius: 50px;
     word-wrap: break-word; /* Ensure text wraps within the container */
     width: 50%; /* Prevent the task bar from becoming too wide */
@@ -113,8 +116,9 @@ li {
 .task-text {
     flex-grow: 1;
     margin-left: 10px;
+    font-size:25px;
     word-wrap: break-word; /* Ensure text wraps within the container */
-    max-width:30%; /* Set a maximum width for the task text */
+    max-width:40%; /* Set a maximum width for the task text */
 }
 
 .task-actions {
@@ -122,40 +126,17 @@ li {
     gap: 5px;
 }
 
-button.edit, button.complete, button.delete {
-    margin-left: 5px;
+button.edit{
+   
+    margin-left:180px;
 }
 
 button.complete {
     width: 100px;
+
 }
 
 button.delete {
     width: 80px;
-}
-
-/* Style the checkbox */
-.edit-checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: white;
     
-    width: 10px; /* Decreased width */
-    height: 10px; /* Decreased height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5px;
-    cursor: pointer;
-}
-
-.edit-checkbox:checked {
-    background-color: rgb(4, 222, 255);
-}
-
-.edit-checkbox:checked::before {
-    content: '✓';
-    color: white;
-    font-size: 8px; /* Decreased font size */
 }

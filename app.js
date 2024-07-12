@@ -32,15 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.setAttribute('data-id', task.id);
 
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.checked = task.complete;
-            checkbox.classList.add('edit-checkbox'); // Added class for styling
-            checkbox.addEventListener('change', () => {
-                task.complete = !task.complete;
-                renderTasks();
-            });
-
             const taskText = document.createElement('div');
             taskText.classList.add('task-text');
             taskText.textContent = task.text;
@@ -72,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             taskActions.appendChild(completeButton);
             taskActions.appendChild(deleteButton);
 
-            li.appendChild(checkbox);
             li.appendChild(taskText);
             li.appendChild(taskActions);
             taskList.appendChild(li);
