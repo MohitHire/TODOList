@@ -55,7 +55,8 @@ body {
 #progress {
     width: 0%;
     height: 20px;
-    background-color: rgb(60, 244, 183);
+    background-color: rgb(60, 167, 244);
+    border:2px solid rgba(0, 0, 255, 0.369);
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -75,18 +76,26 @@ input {
     text-align: left;
     font-size: 20px;
 }
-
 button {
     width: 3.5rem;
     padding: 10px;
     border-radius: 20px;
-    background-color: aquamarine;
-    border: 2px solid rgb(0, 244, 163);
+    background-color:white;
+    border: 2px solid white;
     font-weight: bold;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 15px;
+    opacity:0.7;
+}
+
+button:hover {
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid black;
+    align-items: center;
+    opacity:5;
 }
 
 ul {
@@ -129,14 +138,34 @@ li {
 button.edit{
    
     margin-left:180px;
+    opacity:0.7;
+    background-color:white;
+}
+button.edit:hover{
+   
+    margin-left:180px;
+    opacity:2;
+    background-color:rgb(255, 255, 255);
+    border:2px solid black;
 }
 
 button.complete {
     width: 100px;
-
+}
+button.complete:hover {
+    width: 100px;
+    opacity:2;
+    background-color:white;
+    border:2px solid black;
 }
 
 button.delete {
     width: 80px;
     
 }
+button.delete:hover{
+    opacity:2;
+    background-color:white;
+    border:2px solid black;
+}
+
